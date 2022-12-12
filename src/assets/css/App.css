@@ -1,38 +1,148 @@
-.App {
-  text-align: center;
+* {
+  font-family: 'Sen', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1, h3, h4, p {
+  margin: 0;
+  padding: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.cv {
+  width: 700px;
+}
+
+.cv > * {
+  margin-bottom: 10px;
+}
+
+ul {
+  margin: 0;
+}
+
+.header {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.contact-info {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  gap: 10px;
+}
+
+.experience, .education {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.title {
+  width: 12%;
+}
+
+.content {
+  width: 88%;
+  display: flex;
+  flex-direction: column;
+  padding-left: 9px;
+  box-sizing: border-box;
+}
+
+.content > .edu,
+.content > .exp  {
+  margin-bottom: 10px;
+}
+
+.company, .responsibilities, .add {
+  width: 100%;
+}
+
+.summary, .edu, .exp {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.role,
+.institution-info {
+  width: 75%;
+}
+
+.date-range {
+  width: 25%;
+}
+
+.institution-info {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.date-range {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+}
+
+.address, .contact-info,
+.title, .content {
+  font-size: 11px;
+}
+
+.add, .remove {
+  width: fit-content;
+  padding: 5px;
   color: white;
+  font-weight: 700;
+  border-radius: 2px;
 }
 
-.App-link {
-  color: #61dafb;
+.remove {   
+  margin: 5px 0px 2px 2px;
+  background-color: darkred;
+  border: 1px solid darkred;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.edu:has(.remove:hover),
+.exp:has(.remove:hover)  {
+  background-color: lightpink;
+}
+
+.add {
+  background-color: green;
+  border: 1px solid green;
+}
+
+.add:hover, .remove:hover {
+  color: black;
+  border: 1px solid black;
+}
+
+.edu, .exp {
+  border: 1px solid transparent;
+}
+
+.remove:hover {
+  background-color: lightcoral;
+}
+
+.add:hover {
+  background-color: lightgreen;
+}
+
+li.add {
+  margin-top: 5px;
+  padding: 2.5px;
+  list-style: none;
+
 }
