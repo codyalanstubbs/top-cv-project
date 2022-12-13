@@ -23,12 +23,21 @@ class Section extends Component {
                 </div>
             );
         } else {
-            return (
-                <div className={this.props.sectionName}>
-                    <h3 className="title">{this.props.sectionName.toUpperCase()}:</h3>
-                    <Content sectionName={this.props.sectionName}/>
-                </div>
-            );
+            if (this.props.sectionName === "education" || this.props.sectionName === "experience") {
+                return (
+                    <div className={this.props.sectionName}>
+                        <h3 className="title">{this.props.sectionName.toUpperCase()}:</h3>
+                        <Content sectionName={this.props.sectionName}/>
+                    </div>
+                );
+            } else {
+                return (
+                    <div className={this.props.sectionName}>
+                        <h3 className="title">{this.props.sectionName.toUpperCase()}:</h3>
+                        <Content sectionName={this.props.sectionName}/>
+                    </div>
+                );
+            }
         }
     }
 }
