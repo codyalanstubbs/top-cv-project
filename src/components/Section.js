@@ -24,7 +24,7 @@ class Section extends Component {
         } else {
             return (
                 <div className={this.props.sectionName}>
-                    <h3 class="title">{this.props.sectionName.toUpperCase()}:</h3>
+                    <h3 className="title">{this.props.sectionName.toUpperCase()}:</h3>
                     <Content sectionName={this.props.sectionName}/>
                 </div>
             );
