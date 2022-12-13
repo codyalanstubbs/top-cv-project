@@ -1,4 +1,5 @@
 import { Component } from 'react';
+import Content from './Content';
 
 class Section extends Component {
     constructor(props) {
@@ -24,9 +25,7 @@ class Section extends Component {
             return (
                 <div className={this.props.sectionName}>
                     <h3 class="title">{this.props.sectionName.toUpperCase()}:</h3>
-                    <div class="content">
-
-                    </div>
+                    <Content sectionName={this.props.sectionName}/>
                 </div>
             );
         }
