@@ -1,4 +1,5 @@
 import { Component } from 'react';
+import Responsibilities from './Responsibilities';
 
 class EditableText extends Component {
     constructor(props) {
@@ -49,8 +50,6 @@ class EditableText extends Component {
                 return <h1 className={textClass} onClick={this.onClickEdit}>{text}</h1>;
             } else if (element === "em") {
                 return <em className={textClass} onClick={this.onClickEdit}>{text}</em>;
-            } else if (element === "li") {
-                return <li className={textClass} onClick={this.onClickEdit}>{text}</li>;
             }
         }
 

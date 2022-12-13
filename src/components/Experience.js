@@ -1,6 +1,7 @@
 import { Component } from 'react';
 import DateRange from './DateRange';
 import EditableText from './EditableText';
+import Responsibilities from './Responsibilities';
 
 class Experience extends Component {
     constructor(props) {
@@ -13,12 +14,7 @@ class Experience extends Component {
                 <EditableText element="h4" textClass="role" />
                 <DateRange />
                 <EditableText element="em" textClass="company" />
-                <ul className="responsibilities">
-                    <EditableText element="li" textClass="responsibility" />
-                    <li className="add responsibility">
-                        + Add Another Responsibility
-                    </li>
-                </ul>
+                <Responsibilities />
                 <div className="remove experience">- Remove Experience ↑</div>
             </div>
         );
