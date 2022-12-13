@@ -11,11 +11,11 @@ class Education extends Component {
         return (
             <div className="edu">
                 <div className="institution-info">
-                    <h4 className="institution">The State University</h4>
+                    <EditableText element="h4" textClass="institution"/>
                     <EditableText element="p" textClass="location"/>
                 </div>
                 <DateRange />
-                <em className="company">Bachelor of Science in Coolness</em>
+                <EditableText element="em" textClass="degree"/>
                 <div className="remove experience">- Remove Education ↑</div>
             </div>
         );

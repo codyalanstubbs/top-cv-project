@@ -62,7 +62,8 @@ ul {
   margin-bottom: 10px;
 }
 
-.company, .responsibilities, .add {
+.company, .responsibilities, 
+.add, .degree {
   width: 100%;
 }
 
