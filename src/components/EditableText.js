@@ -10,7 +10,7 @@ class EditableText extends Component {
 
         this.state = {
             editMode : false,
-            text : 'Summarize your experiences and skills in preferably less than three lines',
+            text : `Add your ${this.props.textClass} here`,
         };
     }
 

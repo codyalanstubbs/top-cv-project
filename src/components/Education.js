@@ -1,5 +1,6 @@
 import { Component } from 'react';
 import DateRange from './DateRange';
+import EditableText from './EditableText';
 
 class Education extends Component {
     constructor(props) {
@@ -11,7 +12,7 @@ class Education extends Component {
             <div className="edu">
                 <div className="institution-info">
                     <h4 className="institution">The State University</h4>
-                    <p className="location">, Boise, ID</p>
+                    <EditableText element="p" textClass="location"/>
                 </div>
                 <DateRange />
                 <em className="company">Bachelor of Science in Coolness</em>

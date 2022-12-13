@@ -12,7 +12,7 @@ class Content extends Component {
         if (this.props.sectionName === "summary") {
             return (
                 <div className="content">
-                    <EditableText element="p" textClass=""/>
+                    <EditableText element="p" textClass="summary text"/>
                 </div>
             );
         } else if (this.props.sectionName === "education") {

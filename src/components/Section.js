@@ -1,5 +1,6 @@
 import { Component } from 'react';
 import Content from './Content';
+import EditableText from './EditableText';
 
 class Section extends Component {
     constructor(props) {
@@ -11,13 +12,13 @@ class Section extends Component {
             return (
                 <div className={this.props.sectionName}>
                     <h1 className="name">John Smith</h1>
-                    <p className="address">890 Some Road, Boise, ID</p>
+                    <EditableText element="p" textClass="address"/>
                     <div className="contact-info">
-                        <p className="phone">(000) 000-0000</p>
+                        <EditableText element="p" textClass="phone"/>
                         <p>∙</p>
-                        <p className="email">fake@gmail.com</p>
+                        <EditableText element="p" textClass="email"/>
                         <p>∙</p>
-                        <p className="website">www.linkedin.com/in/fake</p>
+                        <EditableText element="p" textClass="website"/>
                     </div>
                 </div>
             );

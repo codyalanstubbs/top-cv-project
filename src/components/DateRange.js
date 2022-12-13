@@ -1,4 +1,5 @@
 import { Component } from 'react';
+import EditableText from './EditableText';
 
 class DateRange extends Component {
     constructor(props) {
@@ -8,9 +9,9 @@ class DateRange extends Component {
     render() {
         return (
             <div className="date-range">
-                <p className="date start">May 2018</p>
+                <EditableText element="p" textClass="date start"/>
                 <p>to</p>
-                <p className="date end">Sep 2021</p>
+                <EditableText element="p" textClass="date end"/>
             </div>
         );
     }
