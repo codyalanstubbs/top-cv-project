@@ -1,5 +1,6 @@
 import { Component } from 'react';
 import DateRange from './DateRange';
+import EditableText from './EditableText';
 
 class Experience extends Component {
     constructor(props) {
@@ -9,22 +10,11 @@ class Experience extends Component {
     render() {
         return (
             <div className="exp">
-                <h4 className="role">Coolness Research Scientist</h4>
+                <EditableText element="h4" textClass="role" />
                 <DateRange />
-                <em className="company">Coolness Insights, The Coolness Company</em>
+                <EditableText element="em" textClass="company" />
                 <ul className="responsibilities">
-                    <li className="responsibility">
-                        Managed, trained, and maintained the internal Coolnes panel for cross-functional and global research
-                    </li>
-                    <li className="responsibility">
-                        Prioritized Coolness panel’s projects weekly to balance research and Coolness screening workloads
-                    </li>
-                    <li className="responsibility">
-                        Tailored analyses and communications of results based on clients’ needs and background
-                    </li>
-                    <li className="responsibility">
-                        Built strong, collaborative relationships with cross-functional innovation peers quickly and effectively
-                    </li>
+                    <EditableText element="li" textClass="responsibility" />
                     <li className="add responsibility">
                         + Add Another Responsibility
                     </li>
