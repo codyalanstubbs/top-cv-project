@@ -10,7 +10,7 @@ class EditableText extends Component {
 
         this.state = {
             editMode : false,
-            text : `Add your ${this.props.textClass} here`,
+            text : `Add ${this.props.textClass}`,
         };
     }
 
