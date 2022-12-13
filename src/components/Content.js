@@ -1,6 +1,7 @@
 import { Component } from 'react';
 import Education from './Education';
 import Experience from './Experience';
+import EditableText from './EditableText';
 
 class Content extends Component {
     constructor(props) {
@@ -11,7 +12,7 @@ class Content extends Component {
         if (this.props.sectionName === "summary") {
             return (
                 <div className="content">
-                    <p>Demonstrated experience quickly learning new processes, organizing and communicating projects, and leveraging analytical technologies to define and solve research problems.</p>
+                    <EditableText element="p" textClass=""/>
                 </div>
             );
         } else if (this.props.sectionName === "education") {
