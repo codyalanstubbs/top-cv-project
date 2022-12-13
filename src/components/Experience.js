@@ -1,4 +1,5 @@
 import { Component } from 'react';
+import DateRange from './DateRange';
 
 class Experience extends Component {
     constructor(props) {
@@ -9,11 +10,7 @@ class Experience extends Component {
         return (
             <div className="experience">
                 <h4 className="role">Coolness Research Scientist</h4>
-                <div className="date-range">
-                    <p className="date start">May 2018</p>
-                    <p>to</p>
-                    <p className="date end">Sep 2021</p>
-                </div>
+                <DateRange />
                 <em className="company">Coolness Insights, The Coolness Company</em>
                 <ul className="responsibilities">
                     <li className="responsibility">
