@@ -8,7 +8,7 @@ class Experience extends Component {
 
     render() {
         return (
-            <div className="experience">
+            <div className="exp">
                 <h4 className="role">Coolness Research Scientist</h4>
                 <DateRange />
                 <em className="company">Coolness Insights, The Coolness Company</em>
