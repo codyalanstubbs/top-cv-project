@@ -1,4 +1,5 @@
 import { Component } from 'react';
+import Education from './Education';
 
 class Content extends Component {
     constructor(props) {
@@ -15,7 +16,7 @@ class Content extends Component {
         } else if (this.props.sectionName === "education") {
             return (
                 <div className="content">
-
+                    <Education />
                 </div>
             );
         } else if (this.props.sectionName === "experience") {
