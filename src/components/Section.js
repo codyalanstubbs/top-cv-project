@@ -11,7 +11,7 @@ class Section extends Component {
         if (this.props.sectionName === "header") {
             return (
                 <div className={this.props.sectionName}>
-                    <h1 className="name">John Smith</h1>
+                    <EditableText element="h1" textClass="name"/>
                     <EditableText element="p" textClass="address"/>
                     <div className="contact-info">
                         <EditableText element="p" textClass="phone"/>
