@@ -69,10 +69,10 @@ class EditableList extends Component {
                                 if (r.text === `Enter responsibility here`) {
                                     // ... then use placeholder, not value
                                     return (
-                                        <li>
+                                        <li key={r.id} >
                                             <textarea
                                             placeholder={r.text} 
-                                            autoFocus id={r.id} key={r.id} 
+                                            autoFocus id={r.id}
                                             className={textClass} 
                                             onChange={this.onTextChange}
                                             onBlur={this.onEditFocusOut}
@@ -84,10 +84,10 @@ class EditableList extends Component {
                                     // If not default text... 
                                     // ...then use value, not placeholder
                                     return (
-                                        <li>
+                                        <li key={r.id} >
                                             <textarea
                                             value={r.text} 
-                                            autoFocus id={r.id} key={r.id} 
+                                            autoFocus id={r.id}
                                             className={textClass} 
                                             onChange={this.onTextChange}
                                             onBlur={this.onEditFocusOut}
