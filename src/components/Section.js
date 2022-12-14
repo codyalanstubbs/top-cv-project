@@ -1,7 +1,6 @@
 import { Component } from 'react';
 import Content from './Content';
 import EditableText from './EditableText';
-import AddAnotherBtn from './AddAnotherBtn';
 
 class Section extends Component {
     constructor(props) {
@@ -29,7 +28,6 @@ class Section extends Component {
                     <div className={this.props.sectionName}>
                         <h3 className="title">{this.props.sectionName.toUpperCase()}:</h3>
                         <Content sectionName={this.props.sectionName}/>
-                        <AddAnotherBtn sectionName={this.props.sectionName} />
                     </div>
                 );
             } else {

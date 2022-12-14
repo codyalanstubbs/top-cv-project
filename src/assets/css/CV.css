@@ -191,3 +191,7 @@ div.responsibility {
 li.responsibility > div:has(.remove-responsibility:hover) {
   background-color: lightpink;
 }
+
+.button-container {
+  width: fit-content;
+}
