@@ -179,6 +179,7 @@ li.responsibility > div {
   padding: 0px 1px 0px 1px;
   background-color: darkred;
   border: 1px solid darkred;
+  color: white;
 }
 
 .remove-responsibility:hover {
