@@ -77,25 +77,30 @@ class EditableList extends Component {
                                 // If the text is the default text...
                                 if (r.text === `Enter responsibility here`) {
                                     // ... then use placeholder, not value
-                                    return (
-                                        <li key={r.id} className={textClass}  >
-                                            <div>
-                                                <textarea
-                                                placeholder={r.text} 
-                                                autoFocus id={r.id}
-                                                className={textClass} 
-                                                onChange={this.onTextChange}
-                                                onBlur={this.onEditFocusOut}
-                                                >
-                                                </textarea>
-                                                <div id={r.id} className="remove-responsibility">X</div>
-                                            </div>
-                                        </li>
+                                    return (                        
+                                        <div key={r.id} className={textClass} >
+                                            <div id={r.id} className="remove-responsibility" onClick={this.removeResponsibility}>X</div>
+                                            <li key={r.id} className={textClass}  >
+                                                <div>
+                                                    <textarea
+                                                    placeholder={r.text} 
+                                                    autoFocus id={r.id}
+                                                    className={textClass} 
+                                                    onChange={this.onTextChange}
+                                                    onBlur={this.onEditFocusOut}
+                                                    >
+                                                    </textarea>
+                                                </div>
+                                            </li>
+                                        </div>
                                     );  
                                 } else {
                                     // If not default text... 
                                     // ...then use value, not placeholder
                                     return (
+                                        
+                                    <div key={r.id} className={textClass} >
+                                        <div id={r.id} className="remove-responsibility" onClick={this.removeResponsibility}>X</div>
                                         <li key={r.id} className={textClass}  >
                                             <div>
                                                 <textarea
@@ -106,24 +111,19 @@ class EditableList extends Component {
                                                 onBlur={this.onEditFocusOut}
                                                 >
                                                 </textarea>
-                                                <div id={r.id} className="remove-responsibility">X</div>
                                             </div>
                                         </li>
+                                    </div>
                                     );  
                                 }                          
                             } else {
                                 // If editMode is false... 
                                 // ... then return an editable list item
                                 return (
-                                    <li
-                                    key={r.id} 
-                                    className={textClass} 
-                                    >
-                                        <div>
-                                            <p id={r.id} onClick={this.onClickEdit}>{r.text+" "}</p>
-                                            <div id={r.id} className="remove-responsibility" onClick={this.removeResponsibility}>X</div>
-                                        </div>
-                                    </li>
+                                    <div key={r.id} className={textClass} >
+                                        <div id={r.id} className="remove-responsibility" onClick={this.removeResponsibility}>X</div>
+                                        <li id={r.id} onClick={this.onClickEdit}>{r.text+" "}</li>
+                                    </div>
                                 );
                             }                                                        
                     })

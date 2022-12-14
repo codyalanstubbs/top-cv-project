@@ -169,16 +169,17 @@ li.responsibility > div {
   margin: 2.5px 0;
 }
 
-li.responsibility > div {
+div.responsibility {
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 
 .remove-responsibility {
+  margin: 2px 19px 2px -30px;
   padding: 0px 1px 0px 1px;
   background-color: darkred;
   border: 1px solid darkred;
+  text-align: center;
   color: white;
 }
 
