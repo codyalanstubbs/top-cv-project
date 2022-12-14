@@ -8,18 +8,16 @@ class Education extends Component {
     constructor(props) {
         super(props);
 
-        this.addAnother = this.addAnother.bind(this);
-
+        this.addAnother = this.addAnother.bind(this); 
+        
         this.state = {
-            educations  : [{
-                id      : uniqid(),
-            }],
+            educations : [{ id : uniqid() }]
         };
     }
 
     addAnother() {
         this.setState({
-            educations  : this.state.educations.concat({id  : uniqid()})
+            educations : this.state.educations.concat({id  : uniqid()})
         });
     }
 

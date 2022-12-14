@@ -10,21 +10,15 @@ class Experience extends Component {
         super(props);
 
         this.addAnother = this.addAnother.bind(this); 
-
+        
         this.state = {
-            experiences: [{
-                id          : uniqid(),
-            }],
+            experiences : [{ id : uniqid() }]
         };
     }
 
     addAnother() {
         this.setState({
-            experiences    : this.state.experiences.concat(
-                {
-                    id          : uniqid(),
-                }
-            ),
+            experiences : this.state.experiences.concat({id  : uniqid()})
         });
     }
 
