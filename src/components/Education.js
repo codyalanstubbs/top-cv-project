@@ -8,15 +8,15 @@ class Education extends Component {
     constructor(props) {
         super(props);
 
-        this.addAnother = this.addAnother.bind(this); 
+        this.add = this.add.bind(this); 
         this.remove = this.remove.bind(this); 
         
         this.state = {
-            educations : [{ id : uniqid() }]
+            educations : []
         };
     }
 
-    addAnother() {
+    add() {
         this.setState({
             educations : this.state.educations.concat({id  : uniqid()})
         });
@@ -57,7 +57,7 @@ class Education extends Component {
                         );
                     })
                 }
-                <div className="button-container" onClick={this.addAnother}>
+                <div className="button-container" onClick={this.add}>
                     <AddAnotherBtn sectionName="education"  />
                 </div>
             </div>

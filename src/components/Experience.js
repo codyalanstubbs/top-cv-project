@@ -9,15 +9,15 @@ class Experience extends Component {
     constructor(props) {
         super(props);
 
-        this.addAnother = this.addAnother.bind(this); 
+        this.add = this.add.bind(this); 
         this.remove = this.remove.bind(this); 
         
         this.state = {
-            experiences : [{ id : uniqid() }]
+            experiences : []
         };
     }
 
-    addAnother() {
+    add() {
         this.setState({
             experiences : this.state.experiences.concat({id  : uniqid()})
         });
@@ -56,7 +56,7 @@ class Experience extends Component {
 
                     })
                 }
-                <div className="button-container" onClick={this.addAnother}>
+                <div className="button-container" onClick={this.add}>
                     <AddAnotherBtn sectionName="experience"  />
                 </div>
             </div>
