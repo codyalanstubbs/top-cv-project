@@ -34,6 +34,7 @@ class EditableText extends Component {
         if (editMode) {
             return (
                 <textarea
+                autoFocus 
                 className={textClass} 
                 value={text} 
                 onChange={this.onTextChange}
