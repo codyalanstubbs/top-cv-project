@@ -1,5 +1,4 @@
 import { Component } from 'react';
-import Responsibilities from './Responsibilities';
 
 class EditableText extends Component {
     constructor(props) {
