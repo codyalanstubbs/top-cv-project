@@ -29,6 +29,12 @@ class EditableText extends Component {
     render() {
         const {element, textClass} = this.props; 
         const {editMode, text} = this.state; 
+        
+        // If the element is a date, then modify the default/placeholder text
+        let placeholderText = text;
+        if (textClass === "start date" || textClass === "end date") {
+            placeholderText = textClass.charAt(0).toUpperCase() + textClass.slice(1);
+        }
 
         if (editMode) {
             // If the text is the default text...
@@ -36,7 +42,7 @@ class EditableText extends Component {
                 // ... then use placeholder, not value
                 return (
                     <textarea
-                    placeholder={text} 
+                    placeholder={placeholderText}
                     autoFocus className={textClass} 
                     onChange={this.onTextChange}
                     onBlur={this.onEditFocusOut}
@@ -58,13 +64,13 @@ class EditableText extends Component {
             }                                  
         } else {
             if (element === "p") {
-                return <p className={textClass} onClick={this.onClickEdit}>{text}</p>;
+                return <p className={textClass} onClick={this.onClickEdit}>{placeholderText}</p>;
             } else if (element === "h4") {
-                return <h4 className={textClass} onClick={this.onClickEdit}>{text}</h4>;
+                return <h4 className={textClass} onClick={this.onClickEdit}>{placeholderText}</h4>;
             } else if (element === "h1") {
-                return <h1 className={textClass} onClick={this.onClickEdit}>{text}</h1>;
+                return <h1 className={textClass} onClick={this.onClickEdit}>{placeholderText}</h1>;
             } else if (element === "em") {
-                return <em className={textClass} onClick={this.onClickEdit}>{text}</em>;
+                return <em className={textClass} onClick={this.onClickEdit}>{placeholderText}</em>;
             }
         }
 
