@@ -39,5 +39,29 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <button id="remove-buttons">Remove Editting Buttons</button>
   </body>
 </html>
+<script>
+  const removeButtonsBtn = document.querySelector("#remove-buttons");
+
+  removeButtonsBtn.addEventListener('click', () => {
+    
+    const addBtns = document.querySelectorAll(".add");
+    addBtns.forEach((addBtn) => {
+      addBtn.style.display = "none";
+    })
+
+    const removeBtns = document.querySelectorAll(".remove");
+    removeBtns.forEach((removeBtn) => {
+      removeBtn.style.display = "none";
+    })
+    
+    const removeResponsibilityBtns = document.querySelectorAll(".remove-responsibility");
+    removeResponsibilityBtns.forEach((removeResponsibilityBtn) => {
+      removeResponsibilityBtn.style.display = "none";
+    })
+
+    removeButtonsBtn.style.display = "none";
+  })
+</script>
