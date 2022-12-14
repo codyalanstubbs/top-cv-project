@@ -71,7 +71,11 @@ class EditableText extends Component {
             }                                  
         } else {
             if (element === "p") {
-                return <p className={textClass} onClick={this.onClickEdit}>{placeholderText}</p>;
+                if (text === `Add ${textClass}`) {
+                    return <p className={textClass} onClick={this.onClickEdit}>{placeholderText}</p>;
+                } else {
+                    return <p className={textClass} onClick={this.onClickEdit}>{text}</p>;
+                }
             } else if (element === "h4") {
                 return <h4 className={textClass} onClick={this.onClickEdit}>{placeholderText}</h4>;
             } else if (element === "h1") {
