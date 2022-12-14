@@ -32,16 +32,31 @@ class EditableText extends Component {
         const {editMode, text} = this.state; 
 
         if (editMode) {
-            return (
-                <textarea
-                autoFocus 
-                className={textClass} 
-                value={text} 
-                onChange={this.onTextChange}
-                onBlur={this.onEditFocusOut}
-                >
-                </textarea>
-            );
+            // If the text is the default text...
+            if (text === `Add ${textClass}`) {
+                // ... then use placeholder, not value
+                return (
+                    <textarea
+                    placeholder={text} 
+                    autoFocus className={textClass} 
+                    onChange={this.onTextChange}
+                    onBlur={this.onEditFocusOut}
+                    >
+                    </textarea>
+                );  
+            } else {
+                // If not default text... 
+                // ...then use value, not placeholder
+                return (
+                    <textarea
+                    value={text} 
+                    autoFocus className={textClass} 
+                    onChange={this.onTextChange}
+                    onBlur={this.onEditFocusOut}
+                    >
+                    </textarea>
+                );  
+            }                                  
         } else {
             if (element === "p") {
                 return <p className={textClass} onClick={this.onClickEdit}>{text}</p>;
