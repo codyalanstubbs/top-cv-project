@@ -21,9 +21,11 @@ class EditableText extends Component {
     }
 
     onTextChange(event) {
-        this.setState({ text : event.target.value} );    
-        const title = document.querySelector("title");
-        title.textContent = event.target.value + " Resume";
+        this.setState({ text : event.target.value} );   
+        if (event.target.className === "name") {
+            const title = document.querySelector("title");
+            title.textContent = event.target.value + " Resume";
+        }
     }
 
     onEditFocusOut() {
