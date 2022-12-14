@@ -164,9 +164,11 @@ textarea {
 textarea.responsibility {
   max-width: 95%;
 }
+
 li.responsibility > div {
   margin: 2.5px 0;
 }
+
 li.responsibility > div {
   display: flex;
   justify-content: space-between;
