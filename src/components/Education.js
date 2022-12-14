@@ -16,7 +16,9 @@ class Education extends Component {
                 </div>
                 <DateRange />
                 <EditableText element="em" textClass="degree"/>
-                <div className="remove experience">- Remove Education ↑</div>
+                <div className='remove-container'>
+                    <div className="remove experience">- Remove Education ↑</div>
+                </div>
             </div>
         );
     }

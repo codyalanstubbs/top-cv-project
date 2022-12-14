@@ -109,6 +109,12 @@ ul {
   border-radius: 2px;
 }
 
+.remove-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
 .remove {   
   margin: 5px 0px 2px 2px;
   background-color: darkred;

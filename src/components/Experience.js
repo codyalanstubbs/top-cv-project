@@ -15,7 +15,9 @@ class Experience extends Component {
                 <DateRange />
                 <EditableText element="em" textClass="company" />
                 <EditableList textClass="responsibility"/>
-                <div className="remove experience">- Remove Experience ↑</div>
+                <div className='remove-container'>
+                    <div className="remove experience">- Remove Experience ↑</div>
+                </div>
             </div>
         );
     }
