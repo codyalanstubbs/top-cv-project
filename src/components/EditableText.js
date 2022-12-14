@@ -7,6 +7,7 @@ class EditableText extends Component {
         this.onClickEdit = this.onClickEdit.bind(this);
         this.onTextChange = this.onTextChange.bind(this);
         this.onEditFocusOut = this.onEditFocusOut.bind(this);
+        this.handleKeyDown = this.handleKeyDown.bind(this);
 
         this.state = {
             editMode : false,
@@ -24,6 +25,10 @@ class EditableText extends Component {
 
     onEditFocusOut() {
         this.setState({ editMode : false} );
+    }
+
+    handleKeyDown(e) {
+        if (e.key === "Enter") {this.onEditFocusOut()}
     }
 
     render() {
@@ -46,6 +51,7 @@ class EditableText extends Component {
                     autoFocus className={textClass} 
                     onChange={this.onTextChange}
                     onBlur={this.onEditFocusOut}
+                    onKeyDown={this.handleKeyDown}
                     >
                     </textarea>
                 );  
@@ -58,6 +64,7 @@ class EditableText extends Component {
                     autoFocus className={textClass} 
                     onChange={this.onTextChange}
                     onBlur={this.onEditFocusOut}
+                    onKeyDown={this.handleKeyDown}
                     >
                     </textarea>
                 );  
