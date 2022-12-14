@@ -1,3 +1,4 @@
+import ReactDOM from 'react-dom/client';
 import { Component } from 'react';
 
 class EditableText extends Component {
@@ -20,7 +21,9 @@ class EditableText extends Component {
     }
 
     onTextChange(event) {
-        this.setState({ text : event.target.value} );
+        this.setState({ text : event.target.value} );    
+        const title = document.querySelector("title");
+        title.textContent = event.target.value + " Resume";
     }
 
     onEditFocusOut() {
