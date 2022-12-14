@@ -12,6 +12,7 @@ class Education extends Component {
             <div className="edu">
                 <div className="institution-info">
                     <EditableText element="h4" textClass="institution"/>
+                    <p>,&nbsp;</p>
                     <EditableText element="p" textClass="location"/>
                 </div>
                 <DateRange />
