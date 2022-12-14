@@ -10,6 +10,7 @@ class Experience extends Component {
         super(props);
 
         this.addAnother = this.addAnother.bind(this); 
+        this.remove = this.remove.bind(this); 
         
         this.state = {
             experiences : [{ id : uniqid() }]
@@ -22,19 +23,33 @@ class Experience extends Component {
         });
     }
 
+    remove(event) {
+        this.setState({
+            experiences: this.state.experiences.filter((exp) => {
+                return exp.id !== event.target.id;
+            }),
+        });
+    }
+
     render() {
         return (
             <div>
                 { // Create the exprience elements based on the experiences array in state
-                    this.state.experiences.map((e) => {
+                    this.state.experiences.map((exp) => {
                         return (
-                            <div key={e.id} id={e.id} className="exp">
+                            <div key={exp.id} id={exp.id} className="exp">
                                 <EditableText element="h4" textClass="role" />
                                 <DateRange />
                                 <EditableText element="em" textClass="company" />
                                 <EditableList textClass="responsibility"/>
                                 <div className='remove-container'>
-                                    <div className="remove experience">- Remove Experience ↑</div>
+                                    <div 
+                                    id={exp.id} 
+                                    className="remove experience"
+                                    onClick={this.remove}
+                                    >
+                                        - Remove Experience ↑
+                                    </div>
                                 </div>
                             </div>
                         );

@@ -9,6 +9,7 @@ class Education extends Component {
         super(props);
 
         this.addAnother = this.addAnother.bind(this); 
+        this.remove = this.remove.bind(this); 
         
         this.state = {
             educations : [{ id : uniqid() }]
@@ -18,6 +19,14 @@ class Education extends Component {
     addAnother() {
         this.setState({
             educations : this.state.educations.concat({id  : uniqid()})
+        });
+    }
+
+    remove(event) {
+        this.setState({
+            educations: this.state.educations.filter((edu) => {
+                return edu.id !== event.target.id;
+            }),
         });
     }
 
@@ -36,7 +45,13 @@ class Education extends Component {
                                 <DateRange />
                                 <EditableText element="em" textClass="degree"/>
                                 <div className='remove-container'>
-                                    <div className="remove education">- Remove Education ↑</div>
+                                    <div 
+                                    id={edu.id} 
+                                    className="remove education"
+                                    onClick={this.remove}
+                                    >
+                                        - Remove Education ↑
+                                    </div>
                                 </div>
                             </div>
                         );
