@@ -9,6 +9,7 @@ class EditableList extends Component {
         this.onTextChange = this.onTextChange.bind(this);
         this.onEditFocusOut = this.onEditFocusOut.bind(this);
         this.addAnotherResponsibility = this.addAnotherResponsibility.bind(this);
+        this.removeResponsibility = this.removeResponsibility.bind(this);
 
         this.state = {
             responsibilities: [{
@@ -49,6 +50,14 @@ class EditableList extends Component {
                     text        : `Enter responsibility here`,
                 }
             ),
+        });
+    }
+
+    removeResponsibility(event) {
+        this.setState({
+            responsibilities: this.state.responsibilities.filter((responsibility) => {
+                return responsibility.id !== event.target.id;
+            }),
         });
     }
 
@@ -112,7 +121,7 @@ class EditableList extends Component {
                                     >
                                         <div>
                                             <p id={r.id} onClick={this.onClickEdit}>{r.text+" "}</p>
-                                            <div id={r.id} className="remove-responsibility">X</div>
+                                            <div id={r.id} className="remove-responsibility" onClick={this.removeResponsibility}>X</div>
                                         </div>
                                     </li>
                                 );
