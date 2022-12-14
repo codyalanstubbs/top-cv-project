@@ -34,7 +34,7 @@ class Experience extends Component {
     render() {
         return (
             <div>
-                { // Create the exprience elements based on the experiences array in state
+                { // Create the experience elements based on the experiences array in state
                     this.state.experiences.map((exp) => {
                         return (
                             <div key={exp.id} id={exp.id} className="exp">
