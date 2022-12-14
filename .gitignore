@@ -24,3 +24,6 @@ yarn-error.log*
 
 layout.html
 layout.css
+
+log.txt
+log.log
