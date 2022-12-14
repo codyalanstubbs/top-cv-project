@@ -9,9 +9,9 @@ class DateRange extends Component {
     render() {
         return (
             <div className="date-range">
-                <EditableText element="p" textClass="date start"/>
+                <EditableText element="p" textClass="start date "/>
                 <p>to</p>
-                <EditableText element="p" textClass="date end"/>
+                <EditableText element="p" textClass="end date"/>
             </div>
         );
     }
