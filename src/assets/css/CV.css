@@ -63,7 +63,8 @@ ul {
 }
 
 .company, .responsibilities, 
-.add, .degree {
+.add, .responsibility, 
+.degree {
   width: 100%;
 }
 
