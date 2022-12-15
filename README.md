@@ -31,7 +31,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/codyalanstubbs/top-cv-project">
-    <img src="assets/the-odin-project-reac-cv-app-cody-alan-stubbs.jpg" alt="Logo" width="80" height="80">
+    <img src="./src/assets/the-odin-project-reac-cv-app-cody-alan-stubbs.jpg" alt="Logo" width="80" height="80">
   </a>
 
 <h3 align="center">Cody's React CV App for The Odin Project</h3>
