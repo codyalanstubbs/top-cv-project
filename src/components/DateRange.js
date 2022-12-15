@@ -1,5 +1,6 @@
 import { Component } from 'react';
 import EditableText from './EditableText';
+import '../assets/css/DateRange.css';
 
 class DateRange extends Component {
     constructor(props) {

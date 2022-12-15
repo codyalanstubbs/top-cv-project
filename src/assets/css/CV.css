@@ -89,21 +89,10 @@ textarea.name {
   max-width: 75%;
 }
 
-.date-range {
-  width: 25%;
-}
-
 .institution-info {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-}
-
-.date-range {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 8px;
 }
 
 .address, .contact-info,
