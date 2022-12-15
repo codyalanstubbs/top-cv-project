@@ -18,7 +18,7 @@
 *** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
-⌈
+
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
@@ -47,8 +47,6 @@
         <li><a href="#built-with">Built With</a></li>
       </ul>
     </li>
-    <li><a href="#prerequisites">Prerequisites</a></li>
-    <li><a href="#usage">Usage</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#installation">Installation</a></li>
     <li><a href="#contact">Contact</a></li>
@@ -62,7 +60,7 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://codyalanstubbs.com/the-odin-project/19-cv-app/)
 
-This is my first time using React to make an app. This app uses React class components to create a CV builder. A user can d
+This is my first time using React to make an app. This app uses React class components to create a CV builder. A user can add their contact info and educational and work experiences to create a CV.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -114,7 +112,7 @@ This is my first time using React to make an app. This app uses React class comp
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@codyalanstubbs](https://twitter.com/@codyalanstubbs) - email@email_client.com
+Your Name - [@codyalanstubbs](https://twitter.com/@codyalanstubbs)
 
 Project Link: [https://github.com/codyalanstubbs/top-cv-project](https://github.com/codyalanstubbs/top-cv-project)
 
