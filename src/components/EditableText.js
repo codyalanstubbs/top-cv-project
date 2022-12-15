@@ -20,10 +20,22 @@ class EditableText extends Component {
     }
 
     onTextChange(event) {
-        this.setState({ text : event.target.value} );   
-        if (event.target.className === "name") {
-            const title = document.querySelector("title");
-            title.textContent = event.target.value + " Resume";
+        // if the input is empty...
+        if (event.target.value === "") {
+            // ...then set state text to default text
+            this.setState({ text : "Add "+event.target.className} );  
+        } else {
+            // if the input is not empty...
+
+            // ...then set state to user input
+            this.setState({ text : event.target.value} );   
+            
+            // If the input is the name input...
+            if (event.target.className === "name") {
+                // ...then change the title text
+                const title = document.querySelector("title");
+                title.textContent = event.target.value + " Resume";
+            }
         }
     }
 

@@ -30,8 +30,18 @@ class EditableList extends Component {
     onTextChange(event) {
         let items       = [...this.state.responsibilities];
         let item        = items.find(x => x.id === event.target.id);
-        item.text       = event.target.value;
-        this.setState({ responsibilities: items} );
+
+        // if the input is empty...
+        if (event.target.value === "") {
+            // ...then set state text to default text
+            item.text   = "Enter responsibility here";
+            this.setState({ responsibilities: items} );
+        } else {
+            // if the input is not empty...
+            // ...then set state to user input
+            item.text   = event.target.value;
+            this.setState({ responsibilities: items} );
+        }
     }
 
     onEditFocusOut(event) {
