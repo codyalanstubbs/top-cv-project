@@ -72,7 +72,7 @@ textarea.name {
 }
 
 .company, .responsibilities, 
-.add, .responsibility, 
+.responsibility, 
 .degree {
   width: 100%;
 }
@@ -111,7 +111,7 @@ textarea.name {
   font-size: 11px;
 }
 
-.add, .remove {
+.remove {
   width: fit-content;
   padding: 5px;
   color: white;
@@ -136,12 +136,7 @@ textarea.name {
   background-color: lightpink;
 }
 
-.add {
-  background-color: green;
-  border: 1px solid green;
-}
-
-.add:hover, .remove:hover {
+.remove:hover {
   color: black;
   border: 1px solid black;
 }
@@ -158,17 +153,6 @@ textarea.name {
 
 .remove:hover {
   background-color: lightcoral;
-}
-
-.add:hover {
-  background-color: lightgreen;
-}
-
-li.add {
-  margin-top: 5px;
-  padding: 2.5px;
-  list-style: none;
-
 }
 
 textarea {

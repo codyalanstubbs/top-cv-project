@@ -1,5 +1,5 @@
 import { Component } from 'react';
-
+import '../assets/css/CV.css';
 class EditableText extends Component {
     constructor(props) {
         super(props);

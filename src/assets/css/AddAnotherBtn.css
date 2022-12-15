@@ -1,0 +1,15 @@
+.add {
+    width: fit-content;
+    padding: 5px;
+    color: white;
+    font-weight: 700;
+    border-radius: 2px;
+    background-color: green;
+    border: 1px solid green;
+}
+
+.add:hover {
+    background-color: lightgreen;
+    color: black;
+    border: 1px solid black;
+}
