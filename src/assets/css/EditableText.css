@@ -1,0 +1,33 @@
+h1, h4, p {
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    height: 18px;
+    box-sizing: border-box;
+}
+
+textarea.name {
+  font-size: 32px;
+  height: 34px;
+}
+
+.role,
+.institution-info {
+    width: 75%;
+    max-width: 75%;
+}
+
+.title {
+    width: 12%;
+}
+
+.company,
+.degree {
+    width: 100%;
+}
+
+.address, .title {
+  font-size: 11px;
+}

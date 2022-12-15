@@ -28,13 +28,9 @@ body {
   align-items: center;
 }
 
-.header > * {
+.header > *,
+.contact-info > * {
   text-align: center;
-}
-
-textarea.name {
-  font-size: 32px;
-  height: 34px;
 }
 
 .contact-info {
@@ -50,26 +46,12 @@ textarea.name {
   flex-wrap: wrap;
 }
 
-.title {
-  width: 12%;
-}
-
-.company,
-.degree {
-  width: 100%;
-}
-
 .edu, .exp {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
 }
 
-.role,
-.institution-info {
-  width: 75%;
-  max-width: 75%;
-}
 
 .institution-info {
   display: flex;
@@ -77,8 +59,7 @@ textarea.name {
   align-items: center;
 }
 
-.address, .contact-info,
-.title {
+.contact-info {
   font-size: 11px;
 }
 
