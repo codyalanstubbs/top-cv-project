@@ -59,3 +59,7 @@ div.responsibility {
 textarea.responsibility {
     max-width: 95%;
 }
+
+.unedited {
+    color: rgb(160, 0, 0);
+}

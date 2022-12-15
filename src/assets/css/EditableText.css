@@ -30,3 +30,7 @@ textarea.name {
 .address, .title {
   font-size: 11px;
 }
+
+.unedited {
+    color: rgb(160, 0, 0);
+}

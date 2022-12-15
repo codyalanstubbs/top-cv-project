@@ -87,18 +87,26 @@ class EditableText extends Component {
                 );  
             }                                  
         } else {
+
+            let editedClass = "unedited";
+            // If the text is not the default text (it has been edited)...
+            if (text !== `Add ${textClass}`) {
+                // ...then change the editClass to change red text to black
+                editedClass = 'edited';
+            }
+
             if (element === "p") {
                 if (text === `Add ${textClass}`) {
-                    return <p className={textClass} onClick={this.onClickEdit}>{placeholderText}</p>;
+                    return <p className={textClass+" "+editedClass} onClick={this.onClickEdit}>{placeholderText}</p>;
                 } else {
-                    return <p className={textClass} onClick={this.onClickEdit}>{text}</p>;
+                    return <p className={textClass+" "+editedClass} onClick={this.onClickEdit}>{text}</p>;
                 }
             } else if (element === "h4") {
-                return <h4 className={textClass} onClick={this.onClickEdit}>{placeholderText}</h4>;
+                return <h4 className={textClass+" "+editedClass} onClick={this.onClickEdit}>{placeholderText}</h4>;
             } else if (element === "h1") {
-                return <h1 className={textClass} onClick={this.onClickEdit}>{placeholderText}</h1>;
+                return <h1 className={textClass+" "+editedClass} onClick={this.onClickEdit}>{placeholderText}</h1>;
             } else if (element === "em") {
-                return <em className={textClass} onClick={this.onClickEdit}>{placeholderText}</em>;
+                return <em className={textClass+" "+editedClass} onClick={this.onClickEdit}>{placeholderText}</em>;
             }
         }
 

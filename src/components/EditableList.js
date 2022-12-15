@@ -128,12 +128,20 @@ class EditableList extends Component {
                                     );  
                                 }                          
                             } else {
+
+                                let editedClass = "unedited";
+                                // If the text is not the default text (it has been edited)...
+                                if (r.text !== `Enter responsibility here`) {
+                                    // ...then change the editClass to change red text to black
+                                    editedClass = 'edited';
+                                }
+
                                 // If editMode is false... 
                                 // ... then return an editable list item
                                 return (
                                     <div key={r.id} className={textClass} >
                                         <div id={r.id} className="remove-responsibility" onClick={this.removeResponsibility}>X</div>
-                                        <li id={r.id} onClick={this.onClickEdit}>{r.text+" "}</li>
+                                        <li id={r.id} className={editedClass} onClick={this.onClickEdit}>{r.text+" "}</li>
                                     </div>
                                 );
                             }                                                        
