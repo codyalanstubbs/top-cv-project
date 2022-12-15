@@ -46,22 +46,40 @@
   const removeButtonsBtn = document.querySelector("#remove-buttons");
 
   removeButtonsBtn.addEventListener('click', () => {
+    alert('Press Shift + Tab to make edit buttons reappear.')
+    changeBtnsVisibility("none");
+  })
+
+  // Check
+  document.onkeydown = keydown; 
+
+  function keydown (evt) { 
+      if (!evt) evt = event; 
+      // If Shift+Tab are pressed...
+      if (evt.shiftKey && evt.keyCode === 9) { 
+        // ...then make the edit buttons reappear again
+        changeBtnsVisibility("inherit");
+      } 
+  }
+
+  function changeBtnsVisibility(displayValue) {
     
     const addBtns = document.querySelectorAll(".add");
     addBtns.forEach((addBtn) => {
-      addBtn.style.display = "none";
+      addBtn.style.display = displayValue;
     })
 
     const removeBtns = document.querySelectorAll(".remove");
     removeBtns.forEach((removeBtn) => {
-      removeBtn.style.display = "none";
+      removeBtn.style.display = displayValue;
     })
     
     const removeResponsibilityBtns = document.querySelectorAll(".remove-responsibility");
     removeResponsibilityBtns.forEach((removeResponsibilityBtn) => {
-      removeResponsibilityBtn.style.display = "none";
+      removeResponsibilityBtn.style.display = displayValue;
     })
 
-    removeButtonsBtn.style.display = "none";
-  })
+    removeButtonsBtn.style.display = displayValue;
+
+  }
 </script>
