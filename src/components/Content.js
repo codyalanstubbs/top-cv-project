@@ -2,6 +2,7 @@ import { Component } from 'react';
 import Education from './Education';
 import Experience from './Experience';
 import EditableText from './EditableText';
+import '../assets/css/Content.css';
 
 class Content extends Component {
     constructor(props) {

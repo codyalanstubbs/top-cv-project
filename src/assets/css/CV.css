@@ -58,26 +58,13 @@ textarea.name {
   width: 12%;
 }
 
-.content {
-  width: 88%;
-  display: flex;
-  flex-direction: column;
-  padding-left: 9px;
-  box-sizing: border-box;
-}
-
-.content > .edu,
-.content > .exp  {
-  margin-bottom: 10px;
-}
-
 .company, .responsibilities, 
 .responsibility, 
 .degree {
   width: 100%;
 }
 
-.summary, .edu, .exp {
+.edu, .exp {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
@@ -96,7 +83,7 @@ textarea.name {
 }
 
 .address, .contact-info,
-.title, .content {
+.title {
   font-size: 11px;
 }
 

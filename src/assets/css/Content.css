@@ -1,0 +1,24 @@
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+    width: 88%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 9px;
+    box-sizing: border-box;
+    font-size: 11px;
+}
+
+.content > .edu,
+.content > .exp {
+    margin-bottom: 10px;
+}
+
+.summary {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
