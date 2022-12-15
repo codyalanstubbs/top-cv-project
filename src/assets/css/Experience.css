@@ -48,3 +48,6 @@
     background-color: lightcoral;
   }
   
+  .button-container {
+    width: fit-content;
+  }

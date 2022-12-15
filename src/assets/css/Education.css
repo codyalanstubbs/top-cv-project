@@ -50,3 +50,7 @@ p {
     width: 75%;
     max-width: 75%;
 }
+
+.button-container {
+    width: fit-content;
+}
