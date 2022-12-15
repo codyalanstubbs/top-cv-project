@@ -129,7 +129,7 @@ class EditableList extends Component {
                     })
                 }
 
-                <div className="add respnsibility" onClick={this.addAnotherResponsibility}>+ Add Responsibility</div>
+                <div className="add responsibility" onClick={this.addAnotherResponsibility}>+ Add Responsibility</div>
 
             </ul>
         );
