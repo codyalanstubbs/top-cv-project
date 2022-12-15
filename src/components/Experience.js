@@ -4,6 +4,7 @@ import EditableText from './EditableText';
 import AddAnotherBtn from './AddAnotherBtn';
 import EditableList from './EditableList';
 import uniqid from 'uniqid';
+import '../assets/css/Experience.css';
 
 class Experience extends Component {
     constructor(props) {
