@@ -32,6 +32,15 @@ ul {
   align-items: center;
 }
 
+.header > * {
+  text-align: center;
+}
+
+textarea.name {
+  font-size: 32px;
+  height: 34px;
+}
+
 .contact-info {
   display: flex;
   justify-content: center;
