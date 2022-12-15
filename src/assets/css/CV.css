@@ -147,7 +147,13 @@ textarea.name {
 }
 
 .edu, .exp {
+  margin-top: 5px;
   border: 1px solid transparent;
+}
+
+.edu:first-of-type, 
+.exp:first-of-type {
+  margin-top: 0px;
 }
 
 .remove:hover {
@@ -197,7 +203,7 @@ div.responsibility {
   background-color: rgb(255, 0, 0);
 }
 
-li.responsibility > div:has(.remove-responsibility:hover) {
+.responsibility:has(.remove-responsibility:hover) {
   background-color: lightpink;
 }
 
