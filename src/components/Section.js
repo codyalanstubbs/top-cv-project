@@ -1,6 +1,7 @@
 import { Component } from 'react';
 import Content from './Content';
 import EditableText from './EditableText';
+import '../assets/css/Section.css';
 
 class Section extends Component {
     constructor(props) {
