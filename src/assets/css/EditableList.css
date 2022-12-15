@@ -1,0 +1,61 @@
+p {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    margin: 0;
+}
+
+textarea {
+    height: 18px;
+    box-sizing: border-box;
+}
+
+div.responsibility {
+    display: flex;
+    align-items: center;
+}
+
+.responsibilities,
+.responsibility {
+    width: 100%;
+}
+
+.add {
+    width: fit-content;
+    padding: 5px;
+    color: white;
+    font-weight: 700;
+    border-radius: 2px;
+    background-color: green;
+    border: 1px solid green;
+}
+
+.add:hover {
+    background-color: lightgreen;
+    color: black;
+    border: 1px solid black;
+}
+
+.remove-responsibility {
+    margin: 2px 19px 2px -30px;
+    padding: 0px 1px 0px 1px;
+    background-color: darkred;
+    border: 1px solid darkred;
+    text-align: center;
+    color: white;
+}
+
+.remove-responsibility:hover {
+    color: rgb(153, 164, 0);
+    background-color: rgb(255, 0, 0);
+}
+
+.responsibility:has(.remove-responsibility:hover) {
+    background-color: lightpink;
+}
+
+textarea.responsibility {
+    max-width: 95%;
+}

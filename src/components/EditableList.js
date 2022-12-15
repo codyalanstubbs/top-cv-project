@@ -1,5 +1,6 @@
 import { Component } from "react";
 import uniqid from 'uniqid';
+import '../assets/css/EditableList.css';
 
 class EditableList extends Component {
     constructor(props) {
