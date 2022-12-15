@@ -23,7 +23,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/codyalanstubbs/top-cv-project">
-    <img src="./src/assets/the-odin-project-reac-cv-app-cody-alan-stubbs.jpg" alt="Logo" width="80" height="80">
+    <img src="./public/android-chrome-192x192.png" alt="Logo" width="80" height="80">
   </a>
 
 <h3 align="center">Cody's React CV App for The Odin Project</h3>
@@ -47,11 +47,7 @@
         <li><a href="#built-with">Built With</a></li>
       </ul>
     </li>
-    <li>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-      </ul>
-    </li>
+    <li><a href="#prerequisites">Prerequisites</a></li>
     <li><a href="#usage">Usage</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#installation">Installation</a></li>
@@ -74,7 +70,7 @@ This is my first time using React to make an app. This app uses React class comp
 
 ### Built With
 
-* [![React][React.js]][React-url]
+[![React][React.js]][React-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -82,12 +78,12 @@ This is my first time using React to make an app. This app uses React class comp
 <!-- ROADMAP -->
 ## Roadmap
 
-- [✔️] Add contact info
-- [✔️] Add/delete educational experiences
-- [✔️] Add/delete work experiences
-- [✔️] Add/delete work experience responsibilities
-- [✔️] Remove editing buttons for printing/saving the page
-- [✔️] Add back editing buttons by pressing "Shift+Tab"
+- [x] Add contact info
+- [x] Add/delete educational experiences
+- [x] Add/delete work experiences
+- [x] Add/delete work experience responsibilities
+- [x] Remove editing buttons for printing/saving the page
+- [x] Add back editing buttons by pressing "Shift+Tab"
 - [ ] Prevent elements from moving other elements when being edited (CSS) 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -138,7 +134,7 @@ Project Link: [https://github.com/codyalanstubbs/top-cv-project](https://github.
 [license-url]: https://github.com/codyalanstubbs/top-cv-project/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/codystubbs
-[product-screenshot]: images/screenshot.png
+[product-screenshot]: src/assets/the-odin-project-react-cv-app-cody-alan-stubbs-screenshot.png
 [Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
 [Next-url]: https://nextjs.org/
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
