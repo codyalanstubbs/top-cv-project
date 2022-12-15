@@ -1,0 +1,53 @@
+h4,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.edu {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 5px;
+    border: 1px solid transparent;
+}
+
+.edu:first-of-type {
+    margin-top: 0px;
+}
+
+.edu:has(.remove:hover),
+.exp:has(.remove:hover) {
+    background-color: lightpink;
+}
+
+.remove-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.remove {
+    width: fit-content;
+    padding: 5px;
+    color: white;
+    font-weight: 700;
+    border-radius: 2px;
+    margin: 5px 0px 2px 2px;
+    background-color: darkred;
+    border: 1px solid darkred;
+}
+
+.remove:hover {
+    color: black;
+    background-color: lightcoral;
+    border: 1px solid black;
+}
+
+.institution-info {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 75%;
+    max-width: 75%;
+}

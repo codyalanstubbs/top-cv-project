@@ -46,17 +46,10 @@ body {
   flex-wrap: wrap;
 }
 
-.edu, .exp {
+.exp {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-}
-
-
-.institution-info {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
 }
 
 .contact-info {
@@ -83,7 +76,6 @@ body {
   border: 1px solid darkred;
 }
 
-.edu:has(.remove:hover),
 .exp:has(.remove:hover)  {
   background-color: lightpink;
 }
@@ -93,21 +85,15 @@ body {
   border: 1px solid black;
 }
 
-.edu, .exp {
+.exp {
   margin-top: 5px;
   border: 1px solid transparent;
 }
 
-.edu:first-of-type, 
 .exp:first-of-type {
   margin-top: 0px;
 }
 
 .remove:hover {
   background-color: lightcoral;
-}
-
-textarea {
-  height: 18px;
-  box-sizing: border-box;
 }

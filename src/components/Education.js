@@ -3,6 +3,7 @@ import DateRange from './DateRange';
 import EditableText from './EditableText';
 import AddAnotherBtn from './AddAnotherBtn';
 import uniqid from 'uniqid';
+import '../assets/css/Education.css';
 
 class Education extends Component {
     constructor(props) {

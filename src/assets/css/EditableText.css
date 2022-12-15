@@ -13,8 +13,7 @@ textarea.name {
   height: 34px;
 }
 
-.role,
-.institution-info {
+.role {
     width: 75%;
     max-width: 75%;
 }
