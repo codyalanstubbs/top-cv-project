@@ -31,10 +31,10 @@
 <br />
 <div align="center">
   <a href="https://github.com/codyalanstubbs/top-cv-project">
-    <img src="public/android-chrome-192x192.png" alt="Logo" width="80" height="80">
+    <img src="assets/the-odin-project-reac-cv-app-cody-alan-stubbs.jpg" alt="Logo" width="80" height="80">
   </a>
 
-<h3 align="center">project_title</h3>
+<h3 align="center">Cody's React CV App for The Odin Project</h3>
 
   <p align="center">
     project_description
@@ -42,7 +42,7 @@
     <a href="https://github.com/codyalanstubbs/top-cv-project"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/codyalanstubbs/top-cv-project">View Demo</a>
+    <a href="https://codyalanstubbs.com/the-odin-project/19-cv-app/">View Demo</a>
     ·
     <a href="https://github.com/codyalanstubbs/top-cv-project/issues">Report Bug</a>
     ·
