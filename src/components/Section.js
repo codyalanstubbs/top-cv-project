@@ -22,14 +22,14 @@ const Section = (sectionName) => {
             return (
                 <div className={sectionName}>
                     <h3 className="title">{sectionName.toUpperCase()}:</h3>
-                    <Content sectionName={sectionName}/>
+                    {Content(sectionName)}
                 </div>
             );
         } else {
             return (
                 <div className={sectionName}>
                     <h3 className="title">{sectionName.toUpperCase()}:</h3>
-                    <Content sectionName={sectionName}/>
+                    {Content(sectionName)}
                 </div>
             );
         }
