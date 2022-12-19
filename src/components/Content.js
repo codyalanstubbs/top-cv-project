@@ -19,7 +19,7 @@ const Content = (sectionName) => {
     } else if (sectionName === "experience") {
         return (
             <div className="content">
-                <Experience />
+                {Experience()}
             </div>
         );
     }

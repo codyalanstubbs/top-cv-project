@@ -1,4 +1,4 @@
-import { Component } from 'react';
+import { useState } from 'react';
 import DateRange from './DateRange';
 import EditableText from './EditableText';
 import AddAnotherBtn from './AddAnotherBtn';
@@ -6,63 +6,52 @@ import EditableList from './EditableList';
 import uniqid from 'uniqid';
 import '../assets/css/Experience.css';
 
-class Experience extends Component {
-    constructor(props) {
-        super(props);
+const Experience = () => {
+    const [experiences, setExperiences] = useState([]);
 
-        this.add = this.add.bind(this); 
-        this.remove = this.remove.bind(this); 
-        
-        this.state = {
-            experiences : []
-        };
-    }
+    const add = () => {
+        setExperiences(
+            experiences.concat({id  : uniqid()})
+        );
+    };
 
-    add() {
-        this.setState({
-            experiences : this.state.experiences.concat({id  : uniqid()})
-        });
-    }
-
-    remove(event) {
-        this.setState({
-            experiences: this.state.experiences.filter((exp) => {
+    const remove = (event) => {
+        setExperiences(
+            experiences.filter((exp) => {
                 return exp.id !== event.target.id;
-            }),
-        });
-    }
+            })
+        );
+    };
 
-    render() {
-        return (
-            <div>
-                { // Create the experience elements based on the experiences array in state
-                    this.state.experiences.map((exp) => {
-                        return (
-                            <div key={exp.id} id={exp.id} className="exp">
-                                <EditableText element="h4" textClass="role" />
-                                <DateRange />
-                                <EditableText element="em" textClass="company" />
-                                <EditableList textClass="responsibility"/>
-                                <div className='remove-container'>
-                                    <div 
-                                    id={exp.id} 
-                                    className="remove experience"
-                                    onClick={this.remove}
-                                    >
-                                        - Remove Experience ↑
-                                    </div>
+    return (
+        <div>
+            { // Create the experience elements based on the experiences array in state
+                experiences.map((exp) => {
+                    return (
+                        <div key={exp.id} id={exp.id} className="exp">
+                            <EditableText element="h4" textClass="role" />
+                            <DateRange />
+                            <EditableText element="em" textClass="company" />
+                            <EditableList textClass="responsibility"/>
+                            <div className='remove-container'>
+                                <div 
+                                id={exp.id} 
+                                className="remove experience"
+                                onClick={remove}
+                                >
+                                    - Remove Experience ↑
                                 </div>
                             </div>
-                        );
+                        </div>
+                    );
 
-                    })
-                }
-                <div className="button-container" onClick={this.add}>
-                    <AddAnotherBtn sectionName="experience"  />
-                </div>
+                })
+            }
+            <div className="button-container" onClick={add}>
+                <AddAnotherBtn sectionName="experience"  />
             </div>
-        );
-    }
-}
+        </div>
+    );
+};
 
 export default Experience;
