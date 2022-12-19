@@ -3,7 +3,7 @@ import Experience from './Experience';
 import EditableText from './EditableText';
 import '../assets/css/Content.css';
 
-const Content = (sectionName) => {
+const Content = ({sectionName}) => {
     if (sectionName === "summary") {
         return (
             <div className="content">
@@ -19,7 +19,7 @@ const Content = (sectionName) => {
     } else if (sectionName === "experience") {
         return (
             <div className="content">
-                {Experience()}
+                <Experience />
             </div>
         );
     }

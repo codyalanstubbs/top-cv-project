@@ -4,10 +4,10 @@ import Section from './components/Section';
 const CV = () => {
   return (
     <form className="cv">
-      {Section("header")}
-      {Section("summary")}
-      {Section("education")}
-      {Section("experience")}
+      <Section sectionName="header" />
+      <Section sectionName="summary" />
+      <Section sectionName="education" />
+      <Section sectionName="experience" />
     </form>
   );
 };

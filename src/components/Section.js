@@ -2,7 +2,7 @@ import Content from './Content';
 import EditableText from './EditableText';
 import '../assets/css/Section.css';
 
-const Section = (sectionName) => {
+const Section = ({sectionName}) => {
     if (sectionName === "header") {
         return (
             <div className={sectionName}>
@@ -22,14 +22,14 @@ const Section = (sectionName) => {
             return (
                 <div className={sectionName}>
                     <h3 className="title">{sectionName.toUpperCase()}:</h3>
-                    {Content(sectionName)}
+                    < Content sectionName={sectionName} />
                 </div>
             );
         } else {
             return (
                 <div className={sectionName}>
                     <h3 className="title">{sectionName.toUpperCase()}:</h3>
-                    {Content(sectionName)}
+                    < Content sectionName={sectionName} />
                 </div>
             );
         }
